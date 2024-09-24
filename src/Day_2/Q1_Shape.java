@@ -1,3 +1,6 @@
+/* create a class "Shape" with 2 attributes, "width" and "height". Make sure one can not access these attributes directly.
+provide accessor methods on these attributes and allow them to call from outside of your class. */
+
 package Day_2;
 
  class Shape {
