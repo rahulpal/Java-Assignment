@@ -46,6 +46,12 @@ class First
         return numA2;
     }
     
+    @Override
+    public String toString()
+    {
+    	return " Value of numA1 = " + numA1 + " , numA2 = " + numA2;
+    }
+    
 }
 
 class Second
@@ -90,19 +96,44 @@ class Second
         return numB2;
     }
     
+    @Override
+    public String toString()
+    {
+    	return " Value of numB1 = " + numB1 + " , numA2 = " + numB2;
+    }
+    
 }
 
 public class Two {
 
     public static void main(String[] args)
     {
-        First f = new First(10 , 20);
-        Second s = new Second(30 , 40);
+        First f = new First(10 , 20);  // Initialized value using constructor 
+        Second s = new Second(30 , 40); // Initialized value using constructor
+        
+        System.out.println(f);
+        System.out.println(s);
+        
+        /*Initialize the instance values using constructor and then display it using the reference but then
+        we need to override toString method of the class since when we print reference of an object then toString 
+        method of that class is called - as shown above 
+        
+        or else 
+        
+        use getters and setters as below 
+        */
+        
+        
+       /* f.setnumA1(10);
+        f.setnumA2(20);
+        s.setnumB1(30);
+        s.setnumB2(40);
 
        System.out.println( f.getnumA1());
        System.out.println( f.getnumA2());
        System.out.println(s.getnumB1());
        System.out.println(s.getnumB2());
+       */
 
     }
 
