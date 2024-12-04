@@ -36,7 +36,7 @@ class Bottom3 extends Top1
 	}
 }
 
-public class Q5_DynamicPolymorphism {
+public class Q4_DynamicPolymorphism {
 	static void perform(Top1 ref)  // using perform() method 
 	{
 		ref.disp1();
