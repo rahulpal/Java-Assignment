@@ -30,7 +30,7 @@ class Polygon extends Shape
 	@Override
 	public void draw() {
 		
-		System.out.println("Draw Polygon");
+		System.out.println("Draw Polygon"); 
 		
 	}
 	

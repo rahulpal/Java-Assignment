@@ -3,34 +3,34 @@
 
 package Day_5;
 
-class A
+class Base
 {
 	
-	A()
+	Base()
 	{
-		System.out.println("Non-parameterized Constructor A");
+		System.out.println("Non-parameterized Constructor Base");
 	}
 }
 
-class B extends A
+class Subclass extends Base
 {
-	B()
+	Subclass()
 	{
-		System.out.println("Non-parameterized Constructor B");
+		System.out.println("Non-parameterized Constructor Subclass");
 	}
 	
-	B(String s)
+	Subclass(String s)
 	{
 		System.out.println("Parameterized Constructor - Message received : " + s);
 	}
 }
 
-class C extends B
+class Subclass2 extends Subclass
 {
-	C()
+	Subclass2()
 	{
 		super("Hello");   // parent class constructor invoked from child class using super keyword
-		System.out.println("Non-parameterized Constructor C");
+		System.out.println("Non-parameterized Constructor Subclass2");
 	}
 }
 
@@ -38,7 +38,7 @@ public class Q1_MultilevelInheritance {
 	
 	public static void main(String[] args)
 	{
-		C c = new C();
+		Subclass2 c = new Subclass2();
 	}
 
 }
